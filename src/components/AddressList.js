@@ -151,7 +151,7 @@ const AddressList = () => {
 				{addresses.map((address) => (
 					<div className='container d-flex px-3 row border border-dark rounded m-2 p-2 text-right' key={address._id}>
 						<div className='col-md-2'>{address.image && (
-							<img src={`https://myaddressbook-1.onrender.com/uploads/${address.image.path}`} alt={address.image.originalname} width="100" />
+							<img src={`https://myaddressbook-1.onrender.com/${address.image.path}`} alt={address.image.originalname} width="100" />
 						)}
 						</div>
 
