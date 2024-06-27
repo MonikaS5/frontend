@@ -43,7 +43,7 @@ const AddAddress = () => {
 					'Content-Type': 'multipart/form-data'
 				}
 			});
-				nav.push('/');
+				nav('/');
 			
 		} catch (err) {
 			console.error(err);
@@ -81,7 +81,7 @@ const AddAddress = () => {
 					<input type="file" name='image' onChange={onFileChange} accept="image/png, image/jpg, image/jpeg, image/*" />
 				</div>
 				<div className='d-grid  col-2'>
-					<button type="submit" className='btn btn-primary p-2 m-4 btn-lg' onClick={()=>nav("/")}>Add Address</button>
+					<button type="submit" className='btn btn-primary p-2 m-4 btn-lg' >Add Address</button>
 				</div>
 			</form>
 		</div>
