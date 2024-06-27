@@ -12,7 +12,7 @@ const AddressList = () => {
 
 	//handle for fetching addresses on page load
 	useEffect(() => {
-		axios.get("https://myaddressbook-1.onrender.com/api/addresses").then((response) => {
+		axios.get("https://myaddressbook-1.onrender.com/api/addresses",{headers:{'Cache-control':'no-cache'}}).then((response) => {
 			setAddresses(response.data);
 		});
 	}, []);
