@@ -54,7 +54,7 @@ const AddAddress = () => {
 		<div className='container container-fluid min-vh-100 justify-content-center'>
 			<h2 className='display-2 text-center text-primary'>Add Address</h2>
 			< Navigation />
-			<form onSubmit={handleSubmit}>
+			<form onSubmit={handleSubmit} encType='multipart/form-data'>
 				<div className='form-group'>
 					<label className='fw-bold mb-1'>Name:</label>
 					<input type="text" name="name" placeholder='Name' onChange={e => setName(e.target.value)} required className='form-control' />

@@ -58,7 +58,7 @@ const AddressList = () => {
 			{selectedAddress && (
 				<div>
 					<h2>Edit Address</h2>
-					<form onSubmit={() => handleUpdate(selectedAddress)}>
+					<form encType='multipart/form-data' onSubmit={() => handleUpdate(selectedAddress)}>
 						<div className="form-group">
 							<label>Name:</label>
 							<input
